@@ -1,0 +1,1 @@
+export type RouteInfo={ type: 'Get' | 'Put' | 'Delete' | 'Post', route: string, decorators: string[] }

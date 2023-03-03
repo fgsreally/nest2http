@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`nest2http > createRequest 1`] = `
+[
+  "get",
+  "/foo/param?command=cmd",
+  {
+    "name": "nest2http",
+  },
+]
+`;
+
+exports[`nest2http > transform nest controller to fake controller 1`] = `
+"
+import {createRequest} from 'nest2http'
+
+export class NoVersioningController{
+
+    helloFoo(Body_,Query_command,Param_id,){
+return createRequest(
+    {method:'get',
+route:'/foo/:id',
+args:arguments,
+params:[\\"Body_\\",\\"Query_command\\",\\"Param_id\\"]}
+)
+    }
+    
+}"
+`;
