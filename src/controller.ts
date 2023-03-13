@@ -15,7 +15,7 @@ export class FakeController {
     ${methodName}(${genParams(routeInfo.decorators)}){
 return createRequest(
     {method:'${routeInfo.type.toLowerCase()}',
-route:'/${this.route}/${routeInfo.route}',
+route:'/${this.route}/${routeInfo.route.startsWith('/')?routeInfo.route.slice(1):routeInfo.route}',
 args:arguments,
 params:${JSON.stringify(routeInfo.decorators || [])}}
 )
