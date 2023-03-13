@@ -3,7 +3,7 @@
 compile nestjs controller to http request with nice type support
 
 > based on `nestjs`,`unplugin` and `axios`
-> All parameters that are decorated by the nestjs decorator must come first
+> All parameters that are decorated by the nestjs decorator must come first (warning!)
 
 ## backend
 
