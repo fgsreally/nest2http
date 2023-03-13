@@ -6,7 +6,6 @@ async function request() {
 
   try {
     const { data } = await useRequest(helloFoo({ name: 'fgs' }, 'cmd', 'param'))
-
     console.log(data)
   } catch (e) {
     console.log(e)
