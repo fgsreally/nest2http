@@ -1,14 +1,14 @@
 {
   "name": "nest2http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "compile nestjs controller to http request with nice type support",
   "type": "module",
   "exports": {
     ".": {
       "import": "./dist/client.js",
       "require": "./dist/client.cjs"
-    },   
-     "./node": {
+    },
+    "./node": {
       "import": "./dist/node.js",
       "require": "./dist/node.cjs"
     }
@@ -29,7 +29,7 @@
     "dist"
   ],
   "scripts": {
-    "dev":"tsup --watch",
+    "dev": "tsup --watch",
     "build": "tsup",
     "test": "vitest"
   },
